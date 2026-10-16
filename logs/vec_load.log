@@ -1,0 +1,21 @@
+WARNING: tb_vec_load.sv:32: $readmemh(../vectors/xts_directed.hex): Not enough words in the file for the requested range [0:4095].
+WARNING: tb_vec_load.sv:33: $readmemh(../vectors/xts_random.hex): Not enough words in the file for the requested range [0:4095].
+WARNING: tb_vec_load.sv:34: $readmemh(../vectors/xts_trace.hex): Not enough words in the file for the requested range [0:4095].
+WARNING: tb_vec_load.sv:35: $readmemh(../vectors/keyslot.hex): Not enough words in the file for the requested range [0:4095].
+WARNING: tb_vec_load.sv:36: $readmemh(../vectors/kw_standby.hex): Not enough words in the file for the requested range [0:4095].
+PASS  xts_directed count 34
+PASS  xts_random   count 1521
+PASS  xts_trace    count 536
+PASS  keyslot      count 69
+PASS  kw_standby   count 73
+PASS  directed[0]   CTRL/ADDR/K1/DOUT
+PASS  random[last]  CTRL/ADDR/DIN/DOUT
+PASS  keyslot[0]    RK10 (FIPS-197 key)
+PASS  kw[last]      OK=0 reject case
+PASS  byte order: block 0 of line 0 = DIN[127:0], DOUT matches
+PASS  byte order: block 1 of line 0 = DIN[255:128], DOUT matches
+PASS  byte order: block 2 of line 0 = DIN[383:256], DOUT matches
+PASS  byte order: block 3 of line 0 = DIN[511:384], DOUT matches
+PASS  trace XOR consistency (536 blocks)
+VEC_LOAD PASS
+tb_vec_load.sv:76: $finish called at 0 (1ps)

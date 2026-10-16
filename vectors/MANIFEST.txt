@@ -1,0 +1,7 @@
+gen_vectors.py seed=20261016
+
+xts_directed.hex   XTS       1320 bits     34 records  sha256 8431ddbd3109c048
+xts_random.hex     XTS       1320 bits   1521 records  sha256 fda41164521a3127
+xts_trace.hex      TRACE      664 bits    536 records  sha256 0551515d3bb3059f
+keyslot.hex        KEYSLOT    384 bits     69 records  sha256 47a3552411400519
+kw_standby.hex     KW        1016 bits     73 records  sha256 a7a5c56dce5a99fb

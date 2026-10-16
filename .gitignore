@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+tb/vl
+*.vcd
+*.fsdb
+xcelium.d/
+xrun.history
