@@ -1,0 +1,8 @@
+PASS  S-box exhaustive (LUT, tower, tower shared enc/dec): 0/256 wrong
+PASS  enc_lut       encrypt 303/303
+PASS  enc_tower     encrypt 303/303
+PASS  encdec_lut    encrypt 303/303   decrypt 303/303
+PASS  encdec_tower  encrypt 303/303   decrypt 303/303
+PASS  probe_encdec_tower register path (round 1)
+ROUND_TB PASS
+tb_round.sv:93: $finish called at 18206000 (1ps)
