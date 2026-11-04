@@ -1,5 +1,7 @@
 # Checking every SDP_7036 source: what holds, what breaks
 
+> **Erratum (5 Nov 2026, after checking the 2 Nov `refs.bib`):** some "needs fix" items below came from incomplete notes and were already correct in the bib file: Kumar [20] first name, year and DOI; the DAE [7] full title; the [10] full title; the [11] print issue. **[13] is real** (DOI read from your PDF), so keep it rather than drop it; it just is not indexed online. All fixes are now applied in `15_paper/refs.bib`; see `15_paper/REFS_CHANGES_5nov.md`.
+
 Most of the 32 journal references hold up. Authors, venue and year check out for most of them, and most of the "what we took" notes are fair. But a set of errors must be fixed before submission. **NIST SP 800-108r1 was withdrawn on 2 Feb 2024**, so cite SP 800-108r1-upd1. **Volt Boot [3] is a physical attack**: the attacker holds the SRAM rail with a probe. No isolation request is ever issued, so our interlock does not stop it. **Intel's TME-MK spec rev 1.7 says "at least 29b SHA-3 based integrity"** and says nothing about ECC or 28 bits. BadRAM [14] did not "replay past an address-bound MAC". The patent notes have attribution errors. The Freescale and Cadence descriptions are swapped. US9395805 is LSI/Seagate, not Intel. The Altera zeroize-verify patent is US8437200, not US8736299. NXP US11689363 does claim key wrapping, in claims 11-12. Several items are still unverified: [4], [9], [13], the Chypothermia venue, AMD-SB-8018 and the Assertain venue. On novelty, the narrow claim survives. In this sample, **no paper or patent gates power-domain isolation on a verified key erase and proves it with the power manager left unconstrained**. Standby key wrap, wipe on clock stop, debug/test erase, zeroize-verify and power-aware formal checks are all prior art. This was a sample check, not a full freedom-to-operate (FTO) patent search.
 
 ## How to read the tables
@@ -159,7 +161,7 @@ Most rejections hold. One reason needs rewriting. "MAC in ECC" was dropped becau
 | 9 | Chypnosis | 4 authors (one render) | Six authors: Mitard, Khalaj Monfared, Khojasteh Dana, Dumitru, Yarom, Tajik. |
 | 10 | Chypothermia | S&P 2027 cycle 1 | Cite as arXiv 2609.11442. The venue is unverified. |
 | 11 | Assertain | IEEE MDTS 2026 | Cite as arXiv 2604.01583. The venue is unverified. |
-| 12 | [13] | ISENSE 2024 ASCON paper | Not found anywhere. Drop it, or confirm it from your PDF. |
+| 12 | [13] | ISENSE 2024 ASCON paper | Real (DOI from your PDF R13), not indexed online. Keep it; cut first if over the limit. |
 | 13 | N2 | "low-latency memory encryption, Nangate 15 nm" | Authenticated memory encryption. Find the 15 nm page in the PDF. |
 
 ### Wrong "took" or "observed" notes
