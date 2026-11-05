@@ -11,6 +11,7 @@ Source: `docs/references/references_audit_2026-11-05.md`. Numbers [1]-[32] uncha
 | [31] | OpenTitan cited as the versioned Earl Grey 1.0.0 spec, not the moving "latest" page. |
 | [23] | DOI added (10.1145/2976749.2978372). |
 | [21] | Marked CWE 5.0. |
+| [17] | IEEE 1619-2018 -> **IEEE 1619-2025** (supersedes 2018, published 27 Jun 2025). NIST's draft SP 800-38E Rev. 1 (3 Sep 2026) now references 1619-2025 and adds data-unit and key-scope limits: check the design meets them. |
 
 ## Added entries ([33]-[37], TVLSI only)
 On Borrowed Time (NDSS 2025), Chypnosis (S&P 2026), Chypothermia (arXiv), Assertain (arXiv), ATLAS (DAC 2026).
